@@ -9,7 +9,20 @@ Unpub is a self-hosted private Dart Pub server for Enterprise, with a simple web
 
 ![Screenshot](https://raw.githubusercontent.com/bytedance/unpub/master/assets/screenshot.png)
 
+## prerequisites
+
+- [Install GIT](https://git-scm.com/downloads) : to clone the project.
+
+- [Install DART SDK](https://dart.dev/tools/sdk): in order to execute unpub command.
+
+- [Install MongoDB](https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514): in order to create the database through unpub command.
+
 ## Usage via command line
+
+### prerequisites
+Know where is published the unpub.bat (for me was here C:\src\flutter\.pub-cache\bin )
+
+### Command
 
 ```sh
 pub global activate unpub
@@ -19,6 +32,10 @@ unpub --database mongodb://localhost:27017/dart_pub # Replace this with producti
 Unpub use mongodb as meta information store and file system as package(tarball) store by default.
 
 Dart API is also available for further customization.
+
+### Make it peristent
+Add above command lines at server startup
+
 
 ## Usage via Dart API
 
