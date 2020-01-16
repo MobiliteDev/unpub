@@ -102,6 +102,12 @@ var app = unpub.App(
 ### Customize meta and package store
 
 Unpub is designed to be extensible. It is quite easy to customize your own meta store and package store.
+```sh
+cd current_project
+pub publish --server localhost:4000
+```
+
+
 
 ```dart
 import 'package:unpub/unpub.dart' as unpub;
@@ -129,6 +135,10 @@ var app = unpub.App(
 | -------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | `/badge/v/{package_name}` | ![badge example](https://img.shields.io/static/v1?label=unpub&message=0.1.0&color=orange) ![badge example](https://img.shields.io/static/v1?label=unpub&message=1.0.0&color=blue) |
 | `/badge/d/{package_name}`                    | ![badge example](https://img.shields.io/static/v1?label=downloads&message=123&color=blue) |
+
+## how to use in Dart/Flutter project
+Customize the pub [publish command](https://dart.dev/tools/pub/cmd/pub-lish) with it
+
 
 ## Alternatives
 
