@@ -2,6 +2,14 @@
   /* This is equivalent of the 'body' selector of a page. */
 }
 
+.site-header-row {
+  background-color: #0C4790;
+}
+
+._banner-bg {
+  background: #051c3a;
+}
+
 .home-banner {
   padding-bottom: 20px;
 }

@@ -133,8 +133,10 @@ class App {
     }
 
     package.versions.sort((a, b) {
-      return semver.Version.prioritize(
+
+      var res = semver.Version.prioritize(
           semver.Version.parse(a.version), semver.Version.parse(b.version));
+      return res;
     });
 
     var versionMaps = package.versions

@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Dart",
+            "program": "unpub/bin/unpub.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": ["--database", "mongodb://localhost:27017/dart_pub"]
+        }
+    ]
+}
